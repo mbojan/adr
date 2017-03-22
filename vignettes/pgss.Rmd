@@ -1,0 +1,59 @@
+---
+title: "Zmienne PGSS"
+author: "Michał Bojanowski"
+date: "`r Sys.Date()`"
+output: 
+  rmarkdown::html_vignette:
+    toc: yes
+vignette: >
+  %\VignetteIndexEntry{pgss}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+```{r setp, include=FALSE, cache=FALSE}
+suppressPackageStartupMessages({
+  library(tidyverse)
+})
+
+knitr::opts_chunk$set(
+  cache=FALSE,
+  echo=FALSE
+)
+```
+
+
+Krótki opis zmiennych PGSS w ramce `pgss`.
+
+Dane pochodzą z Archiwum Danych Społecznych http://ads.org.pl.
+
+```{r, include=FALSE}
+opisy <- readr::read_csv(
+  system.file(file.path("exdata", "pgss-info.csv"), package="adr")
+)
+```
+
+
+# Nazwy zmiennych i etykiety
+
+```{r}
+opisy %>%
+  select(Zmienna=variable, Opis=label ) %>%
+  arrange(Zmienna) %>%
+  knitr::kable()
+```
+
+
+
+# Kiedy zadawano pytanie
+
+Poniżej można się zorientować kiedy zadano które pytania. W każdej komórce liczba respondentów, którzy udzielili znaczących odpowiedzi. Jeżeli jest 0, znaczy, że pytanie nie zostało zadane.
+
+```{r}
+opisy %>%
+  select(-label) %>%
+  rename(Zmienna = variable) %>%
+  knitr::kable()
+```
+
