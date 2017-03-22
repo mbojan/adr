@@ -1,0 +1,72 @@
+variable,1992,1993,1994,1995,1997,1999,2002,2005,2008,label
+adults,1647,1649,1609,1603,2401,2282,2473,1277,1293,L.osób dorosłych w gosp dom 18+lat
+babies,1647,1649,1609,1603,2401,2282,2469,1275,1293,L.osób w gosp domowym do 6 lat
+g5a,0,0,0,0,0,0,0,0,1292,Większość ludzi jest w gruncie rzeczy uczciwa.
+g5b,0,0,0,0,0,0,0,0,1292,Większość ludzi jest godna zaufania.
+g5c,0,0,0,0,0,0,0,0,1293,Ludzie zawsze myślą o swoim interesie.
+g5d,0,0,0,0,0,0,0,0,1293,"Większość ludzi zaufa temu, kto im zaufa."
+g5e,0,0,0,0,0,0,0,0,1292,"Jeśli nie będziesz ostrożny, to w dzisiejszych czasach ludzie Cię wykorzystają."
+g5f,0,0,0,0,0,0,0,0,1292,W dzisiejszych czasach nie musimy się przejmować czy nie będziemy przez kogoś wykorzystani.
+g5g,0,0,0,0,0,0,0,0,1292,Większość ludzi jest z natury dobra i uprzejma.
+g5h,0,0,0,0,0,0,0,0,1293,Większość ludzi ufa innym.
+g5i,0,0,0,0,0,0,0,0,1293,"Większość ludzi niespecjalnie wysila się, aby pomóc innym."
+g5j,0,0,0,0,0,0,0,0,1290,"Jeśli założymy, że wszyscy od czasu do czasu źle postępują, zaoszczędzilibyśmy sobie wielu kłopotów."
+g5k,0,0,0,0,0,0,0,0,1293,"Ogólnie rzecz biorąc, ufam innym."
+hompop,1647,1649,1609,1603,2401,2282,2473,1277,1293,Liczba osób w gospodarstwie domowym
+in5a,1421,0,0,0,0,930,0,0,0,Ile zarabia robotnik wykwalifikowany
+in5b,1324,0,0,0,0,904,0,0,0,Ile zarabia lekarz internista
+in5c,1314,0,0,0,0,899,0,0,0,Ile zarabia dyrektor prywatnego przedsiębiorstwa
+in5d,1241,0,0,0,0,871,0,0,0,Ile zarabia adwokat
+in5e,1369,0,0,0,0,944,0,0,0,Ile zarabia sprzedawca
+in5f,1219,0,0,0,0,856,0,0,0,Ile zarabia właściciel dużej fabryki
+in5g,1224,0,0,0,0,856,0,0,0,Ile zarabia sędzia sądu najwyższego
+in5h,1396,0,0,0,0,928,0,0,0,Ile zarabia robotnik niewykwalifikowany
+in5i,1303,0,0,0,0,880,0,0,0,Ile zarabia minister
+in5j,0,0,0,0,0,813,0,0,0,Ile zarabia osoba z tym samym zawodem co respondent
+in5k,1316,0,0,0,0,0,0,0,0,Ile zarabia właściciel małego sklepu
+in5l,1303,0,0,0,0,0,0,0,0,Ile zarabia robotnik rolny
+in6a,1459,0,0,0,0,962,0,0,0,Ile powinien zarabiać robotnik wykwalifikowany
+in6b,1429,0,0,0,0,942,0,0,0,Ile powinien zarabiać lekarz internista
+in6c,1372,0,0,0,0,914,0,0,0,Ile powinien zarabiać dyr prywat przedsiębiorstwa
+in6d,1344,0,0,0,0,904,0,0,0,Ile powinien zarabiać adwokat
+in6e,1431,0,0,0,0,959,0,0,0,Ile powinien zarabiać sprzedawca
+in6f,1312,0,0,0,0,877,0,0,0,Ile powinien zarabiać właściciel fabryki
+in6g,1325,0,0,0,0,892,0,0,0,Ile powinien zarabiać sędzia sądu najwyższego
+in6h,1430,0,0,0,0,950,0,0,0,Ile powinien zarabiać robotnik niewykwalifikowany
+in6i,1374,0,0,0,0,911,0,0,0,Ile powinien zarabiać minister
+in6j,0,0,0,0,0,835,0,0,0,Ile powinna zarabiać oso z tym sam zaw co respondent
+in6k,1390,0,0,0,0,0,0,0,0,Ile powinien zarabiać właściciel sklepu
+in6l,1389,0,0,0,0,0,0,0,0,Ile powinien zarabiać robotnik rolny
+preteen,1647,1649,1609,1603,2401,2282,2469,1275,1293,L.osób w gosp domowym 6-12 lat
+q102a,1643,1646,1607,1600,1205,1121,1246,1277,1293,Aborcja: dziecko urodzi się z wadami
+q102b,1640,1646,1604,1597,1208,1119,1247,1277,1293,Aborcja: mężatka nie chce więcej dzieci
+q102c,1638,1646,1604,1598,1208,1120,1247,1277,1293,Aborcja: ciąża zagraża zdrowiu kobiety
+q102d,1636,1646,1604,1598,1207,1117,1245,1276,1293,Aborcja: bardzo niskie dochody
+q102e,1640,1645,1605,1600,1208,1121,1248,1276,1293,Aborcja: ciąża wynikiem gwałtu
+q102f,1639,1645,1604,1597,1208,1117,1247,1275,1293,"Aborcja: panna, nie chce małżeństwa"
+q102g,1637,1644,1603,1598,1209,1116,1246,1275,1293,Aborcja: kobieta tak chce
+q104,1644,1649,1608,1600,1208,1120,1249,1277,1293,Stosunki seksualne przed ślubem
+q105,1643,1648,1608,1602,1208,1120,1249,1276,1293,Seks z innym partnerem niż współmałżonek
+q106,1645,1648,1609,1602,1210,1120,1251,1276,1293,Stosunki homoseksualne
+q107,1645,1646,1609,1601,2398,2264,2471,1276,1293,Porządne lanie dziecka czasami konieczne
+q131ed,1647,1648,1609,1599,2399,2282,2473,1277,1293,Lat nauki szkolnej respondenta
+q135,1638,1634,1599,1587,2303,2126,2296,1171,1218,Dochód łączny gosp domowego (PLN)
+q18st,1647,1649,1609,1603,2401,2282,2473,1277,1293,Sytuacja resp na rynku pracy /8 kat
+q22isc9,1527,1503,1447,1452,2120,2026,2190,1075,1121,Zawód resp: klasyf ISCO 1988 /9 kat
+q22ops,1527,1503,1447,1452,2120,2026,2190,1075,1121,"Resp: skala prestizu zawodu, Treiman 96"
+q22sei,1527,1503,1447,1452,2120,2026,2190,1075,1121,"Resp: skala poz ekon zawodu, Treiman 96"
+q32,839,793,758,753,1125,935,1012,500,538,Dochody z pracy respondenta (PLN)
+q33,833,801,764,761,1167,964,1059,532,572,Dochody z pracy a zasługi
+q34,834,789,757,754,1142,961,1030,512,557,Na jakie dochody zasługuje (PLN)
+q41a,1646,1649,1609,1603,2392,2282,2473,1277,1293,Stan cywilny
+q7a,1643,1648,1609,1603,1208,1135,1248,1277,1290,Pracująca matka może zapewnić ciepło
+q7b,1642,1646,1607,1601,1207,1133,1247,1277,1289,Żona niech zapewnia mężowi karierę
+q7c,1644,1647,1608,1603,1206,1133,1247,1276,1287,Praca matki szkodzi dziecku
+q7d,1644,1648,1609,1602,1206,1135,1244,1276,1287,Lepiej gdy mężcz zarabia/kobieta w domu
+q8,1647,1649,1609,1603,2401,2282,2473,1277,1293,"Płeć respondenta: 1=M, 2=KOB"
+q9age,1647,1649,1609,1603,2401,2282,2473,1277,1293,Wiek respondenta
+region8,1647,1649,1609,1603,2401,2282,2473,1277,1293,Region zamieszkania (8 regionów)
+size,1647,1649,1609,1603,2401,2282,2473,1277,1293,Wielkość miejscowości zamieszkania
+teens,1647,1649,1609,1603,2401,2282,2469,1275,1293,L.osób w gosp domowym 13-17 lat
+voiev16,0,0,0,0,0,2282,2473,1277,1293,Województwo zamieszkania (16 woj. od 1999 r.)
+weight,1647,1649,1609,1603,2401,2282,2473,1277,1293,Waga analityczna

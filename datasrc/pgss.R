@@ -10,7 +10,7 @@ vnames <- c(names(pgss1999in), names(taxdata), names(sexdata), names(earnings), 
 unames <- unique(vnames)
 
 
-#============================================================================ 
+#============================================================================
 
 library(memisc)
 
@@ -107,19 +107,33 @@ pgss <- as.data.frame(d, stringsAsFactors=FALSE)
 save(pgss, file="../data/pgss.rda")
 
 
-#============================================================================ 
+#============================================================================
 # Co kiedy zadane?
 
+library(tidyverse)
+
 vnames <- names(pgss)[-c(1:2)]
-library(dplyr)
-library(tidyr)
 z <- mutate_each_(pgss, funs(!is.na(.)), vnames)
-zz <- gather(z, variable, isna, -recordid, -pgssyear) %>% 
+zz <- gather(z, variable, isna, -recordid, -pgssyear) %>%
   group_by(variable, pgssyear) %>%
   summarise(nna=sum(isna)) %>%
-  spread(pgssyear, nna)
-zzz <- as.data.frame(zz)
-zzz$opis <- description(d)[-c(1:2)]
+  spread(pgssyear, nna) %>%
+  as.data.frame(stringsAsFactors=FALSE)
+
+zzz <- zz %>%
+  left_join(
+    description(d) %>%
+      unlist() %>%
+      data.frame(
+        name = names(.),
+        label = .,
+        stringsAsFactors=FALSE
+      ),
+    by = c("variable"="name")
+  )
+
+
+
 
 # Zapisz do Excela
 library(XLConnect)
@@ -129,8 +143,15 @@ writeWorksheet(wb, zzz, sheet="PGSS informacje")
 saveWorkbook(wb)
 
 
+# Zapisz do CSV
 
-#============================================================================ 
+readr::write_csv(zzz, path="../inst/exdata/pgss-info.csv")
+
+
+
+
+
+#============================================================================
 # Podzbiory
 
 
