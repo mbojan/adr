@@ -6,7 +6,7 @@ output:
   rmarkdown::html_vignette:
     toc: yes
 vignette: >
-  %\VignetteIndexEntry{pgss}
+  %\VignetteIndexEntry{pgssinfo}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
