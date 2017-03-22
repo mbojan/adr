@@ -8,7 +8,7 @@
 \format{Ramka danych: 16234 obserwacje, 73 kolumny
 
 Opisy kolumn oraz dostępność pytań w latach opisana jest w pliku
-'pgss-info.xls'.}
+'pgss-info.xls' oraz w winiecie \href{../doc/pgss.html}{PGSS}}
 \source{
 Archiwum Danych Społecznych http://www.ads.org.pl
 }
