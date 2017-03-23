@@ -14,7 +14,7 @@ vignette: >
 
 ```{r setp, include=FALSE, cache=FALSE}
 suppressPackageStartupMessages({
-  library(tidyverse)
+  library(dplyr)
 })
 
 knitr::opts_chunk$set(
