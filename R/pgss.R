@@ -4,6 +4,7 @@
 #'
 #' @docType data
 #' @name pgss
+#' @aliases pgss2
 #' @encoding UTF-8
 #'
 #' @format Ramka danych: 16234 obserwacje, 73 kolumny

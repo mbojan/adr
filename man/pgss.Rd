@@ -4,6 +4,7 @@
 \encoding{UTF-8}
 \name{pgss}
 \alias{pgss}
+\alias{pgss2}
 \title{Polskie Generalne Sondaże Społeczne}
 \format{Ramka danych: 16234 obserwacje, 73 kolumny
 

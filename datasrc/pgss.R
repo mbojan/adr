@@ -107,6 +107,16 @@ pgss <- as.data.frame(d, stringsAsFactors=FALSE)
 save(pgss, file="../data/pgss.rda")
 
 
+
+# Wersja czysto numeryczna -----------------------------
+
+pgss2 <- as.data.frame(
+  lapply(as.list(d), function(x) replace(x@.Data, which(x@.Data < 0), as.numeric(NA))),
+  stringsAsFactors = FALSE
+)
+
+save(pgss2, file="../data/pgss2.rda")
+
 #============================================================================
 # Co kiedy zadane?
 
