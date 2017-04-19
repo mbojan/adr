@@ -26,4 +26,4 @@
 #'
 #' @source
 #' Narodowe Centrum Nauki http://www.ncn.gov.pl
-
+NULL
