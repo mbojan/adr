@@ -2,7 +2,7 @@ define run-r
 R CMD BATCH --no-save --no-restore $< && touch $(<:.R=.Rdone)
 endef
 
-scripts=warszawa pgss polpan wybory2015 uczniowie
+scripts=warszawa pgss polpan wybory2015 uczniowie ncn
 
 .PHONY: default
 default: $(scripts:=.Rdone) shp.done
@@ -28,4 +28,7 @@ shp.done:
 	cp POL_adm1.* ../inst/exdata/ && touch $@
 
 uczniowie.Rdone: uczniowie.R
+	$(run-r)
+
+ncn.Rdone: ncn.R zestawienie-grantobiorcy-2013-2015.xlsx
 	$(run-r)
