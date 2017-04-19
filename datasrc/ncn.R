@@ -24,7 +24,12 @@ loadWorkbook("zestawienie-grantobiorcy-2013-2015.xlsx") %>%
          - grupa
   ) %>%
   mutate(
-    kategoria_naukowa_2015 = ifelse(Kategoria.naukowa..dane.dla.2015.r.. == "BRAK DANYCH", NA, Kategoria.naukowa..dane.dla.2015.r..),
+    kategoria_naukowa_2015 = ifelse(Kategoria.naukowa..dane.dla.2015.r.. == "BRAK DANYCH", NA, Kategoria.naukowa..dane.dla.2015.r..)
+  ) %>%
+  select(
+    -Kategoria.naukowa..dane.dla.2015.r..
+  ) %>%
+rename(
     jednostka_glowna = Nazwa.jednostki.głównej,
     jednostka_uczelniana = Nazwa.jednostki.uczelnianej,
     zrodlo_danych = Źródło.danych..pracownicy.naukowi.
