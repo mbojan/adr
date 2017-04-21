@@ -12,7 +12,7 @@ vignette: >
 ---
 
 
-```{r setp, include=FALSE, cache=FALSE}
+```{r setup, include=FALSE, cache=FALSE}
 suppressPackageStartupMessages({
   library(dplyr)
 })
@@ -28,20 +28,25 @@ Krótki opis zmiennych PGSS w ramce `pgss`.
 
 Dane pochodzą z Archiwum Danych Społecznych http://ads.org.pl.
 
-```{r, include=FALSE}
-opisy <- readr::read_csv(
-  system.file(file.path("exdata", "pgss-info.csv"), package="adr")
+```{r read-data, include=FALSE}
+opisy <- read.csv(
+  system.file(file.path("exdata", "pgss-info.csv"), package="adr"),
+  as.is=TRUE,
+  check.names=FALSE
 )
 ```
 
 
 # Nazwy zmiennych i etykiety
 
-```{r}
-opisy %>%
-  select(Zmienna=variable, Opis=label ) %>%
-  arrange(Zmienna) %>%
-  knitr::kable()
+```{r opisy-zmiennych}
+o <- order(opisy$variable)
+knitr::kable( 
+  structure(
+    opisy[o,c(1,11)], 
+    names=c("Zmienna", "Opis")
+    )
+  )
 ```
 
 
@@ -51,9 +56,11 @@ opisy %>%
 Poniżej można się zorientować kiedy zadano które pytania. W każdej komórce liczba respondentów, którzy udzielili znaczących odpowiedzi. Jeżeli jest 0, znaczy, że pytanie nie zostało zadane.
 
 ```{r}
-opisy %>%
-  select(-label) %>%
-  rename(Zmienna = variable) %>%
-  knitr::kable()
+knitr::kable(
+  structure(
+    opisy[,-11],
+    names=replace(names(opisy)[-11], 1, "Zmienna")
+  )
+)
 ```
 
