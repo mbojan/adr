@@ -1,8 +1,8 @@
 Package: adr
-Title: Analiza Danych z R w ICM
+Title: Analiza Danych z R
 Version: 3.0-1
 Authors@R: c(person("Michal", "Bojanowski", role=c("aut", "cre"), email="michal2992@gmail.com"))
-Description: Dane do kursu "Analiza danych z R" na studiach "Inzynieria obliczeniowa" w ICM UW.
+Description: Dane do kursu "Analiza danych z R".
 Depends: R (>= 3.3.2)
 Suggests: knitr, rmarkdown
 License: MIT + file LICENSE
