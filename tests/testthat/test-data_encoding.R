@@ -16,10 +16,11 @@ test_that("CP1250 tests run without errors", {
 
 test_that("CP1250 tests run on Windows with polish locale", {
   skip_on_os("linux")
+  skip_on_os("linux")
   expect_silent({
-    loc <- Sys.getlocale()
+    loc <- Sys.getlocale("LC_CTYPE")
     Sys.setlocale("Polish_Poland.CP1250")
     source("data_encoding-cp1250.R")
-    suppressMessages(Sys.setlocale(loc))
+    suppressMessages(Sys.setlocale("LC_ALL", loc))
   })
 })
