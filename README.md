@@ -9,6 +9,14 @@
 **Polski**: Zbiory danych, których często używam ucząc R.
 
 
+## Installation
+
+
+```r
+remotes::install_github("mbojan/adr", build_vignettes = TRUE)
+```
+
+
 ## Author
 
 Michał Bojanowski and authors/sources of respective datasets (consult "Source" sections of the data documentation pages).
