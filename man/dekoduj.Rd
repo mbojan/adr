@@ -10,11 +10,9 @@
 \usage{
 dekoduj(x, ...)
 
-\method{dekoduj}{data.frame}(x, from_encoding = "UTF-8",
-  to_encoding = "cp1250", ...)
+\method{dekoduj}{data.frame}(x, from_encoding = "UTF-8", to_encoding = "cp1250", ...)
 
-\method{dekoduj}{default}(x, from_encoding = "UTF-8",
-  to_encoding = "CP1250", ...)
+\method{dekoduj}{default}(x, from_encoding = "UTF-8", to_encoding = "CP1250", ...)
 
 koduj(x, from_encoding = "", to_encoding = "UTF-8", ...)
 }

@@ -7,14 +7,16 @@
 \alias{wybory2015_1}
 \alias{wybory2015_2}
 \title{Wybory Prezydenta RP 2015}
-\format{Dwie ramki danych
+\format{
+Dwie ramki danych
 \describe{
 \item{\code{wybory2015_1}}{pierwsza tura}
 \item{\code{wybory2015_2}}{druga tura}
 \item{baza danych SQLite}{plik \code{wybory2015.sqlite} w katalogu \code{exdata} zawierająca tabele \code{tura1} oraz \code{tura2}}
 \item{pliki XLS}{dwa pliki MS Excel \code{wyniki_tura1-1.xls} oraz
 \code{wyniki_tura2.xls} oryginalnie dystrybuowane przez PKW}
-}}
+}
+}
 \source{
 Państwowa Komisja Wyborcza \url{http://www.pkw.gov.pl}
 }

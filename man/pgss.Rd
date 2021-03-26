@@ -6,10 +6,12 @@
 \alias{pgss}
 \alias{pgss2}
 \title{Polskie Generalne Sondaże Społeczne}
-\format{Ramka danych: 16234 obserwacje, 73 kolumny
+\format{
+Ramka danych: 16234 obserwacje, 73 kolumny
 
 Opisy kolumn oraz dostępność pytań w latach opisana jest w pliku
-'pgss-info.xls' oraz w winiecie \href{../doc/pgss.html}{PGSS}}
+'pgss-info.xls' oraz w winiecie \href{../doc/pgss.html}{PGSS}
+}
 \source{
 Archiwum Danych Społecznych http://www.ads.org.pl
 }
@@ -17,6 +19,6 @@ Archiwum Danych Społecznych http://www.ads.org.pl
 Podzbiór Polskich Generalnych Sondaży Społecznych
 }
 \examples{
-# Ścieżka do pliku XLS
+# ĹšcieĹĽka do pliku XLS
 system.file(file.path("exdata", "pgss-info.xls"), package="adr")
 }

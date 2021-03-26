@@ -5,7 +5,9 @@
 \name{donations}
 \alias{donations}
 \title{donations: wpłaty na cele charytatywne w Holandii w 1993}
-\format{Ramka danych zawierająca 2000 obserwacji i 17 zmiennych.}
+\format{
+Ramka danych zawierająca 2000 obserwacji i 17 zmiennych.
+}
 \description{
 Podzbiór z badania sondażowego dotyczącego "filantropii" w społeczeństwie holenderskim w roku 1993.
 }

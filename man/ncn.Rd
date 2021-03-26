@@ -5,7 +5,8 @@
 \name{ncn}
 \alias{ncn}
 \title{Statystyki składania wniosków do NCN}
-\format{Ramka danych: 2979 obserwacje, 14 kolumn
+\format{
+Ramka danych: 2979 obserwacje, 14 kolumn
 \describe{
 \item{GWO}{Grupa Wspólnej Oceny}
 \item{jednostka_uczelniana}{Nazwa jednostki podstawowej (wydziały/instytuty)}
@@ -19,7 +20,8 @@
 \item{wnioski_finansowane}{Liczba złożonych wniosków, które otrzymały finansowanie}
 \item{wnioski_zlozone}{Liczba złożonych wniosków}
 \item{GWO_grupa,GWO_typ_jednostki,GWO_dziedzina}{Wydorębnione z \code{GWO} odpowiednio: grupa dziedzin nauki, typ jednostki głównej oraz dziedzina nauki}
-}}
+}
+}
 \source{
 Narodowe Centrum Nauki http://www.ncn.gov.pl
 }

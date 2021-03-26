@@ -7,7 +7,8 @@
 \alias{uczniowie_relacje}
 \alias{uczniowie_atrybuty}
 \title{Dane o uczniach pewnej klasy podstawowej}
-\format{Dwie ramki danych z następującymi kolumnami:
+\format{
+Dwie ramki danych z następującymi kolumnami:
 
 \code{uczniowie_relacje} kto z kim
 \describe{
@@ -22,7 +23,8 @@
 \item{isei08_m}{Status społeczno-ekonomiczny (ISEI) matki}
 \item{isei08_f}{Status społeczno-ekonomiczny (ISEI) ojca}
 \item{female}{Czy dziecko to dziewczynka}
-}}
+}
+}
 \source{
 Instyt Badań Edukacyjnych, badanie Szkolne Uwarunkowania Efektywności Kształcenia (SUEK)
 }
