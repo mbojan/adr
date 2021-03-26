@@ -3,7 +3,7 @@
 #' Dane z głosowań pierwszej i drugiej tury wyborów Prezydenta RP w 2015 roku.
 #'
 #' Pakiet zawiera dane z wyborów w różnych formatach:
-#' 
+#'
 #' @format Dwie ramki danych
 #' \describe{
 #' \item{\code{wybory2015_1}}{pierwsza tura}
@@ -19,3 +19,10 @@
 #' @encoding UTF-8
 #' @source Państwowa Komisja Wyborcza \url{http://www.pkw.gov.pl}
 NULL
+
+
+to_english_wybory2015_2 <- function() {
+  vnames <- c(
+    Województwo = "Voivodship"
+  )
+}
