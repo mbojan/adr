@@ -1,2 +1,9 @@
-[![Build Status](https://travis-ci.org/mbojan/adr.png?branch=master)](https://travis-ci.org/mbojan/adr) 
-[![Build Status](https://ci.appveyor.com/api/projects/status/i99d5mc50arwbol2?svg=true)](https://ci.appveyor.com/project/mbojan/adr) 
+# Analiza Danych z R
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/mbojan/adr/workflows/R-CMD-check/badge.svg)](https://github.com/mbojan/adr/actions)
+<!-- badges: end -->
+
+**English**: Data I frequently use in R courses.
+
+**Polski**: Zbiory danych, których często używam ucząc R.
