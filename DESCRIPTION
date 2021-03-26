@@ -1,7 +1,6 @@
 Package: adr
 Title: Analiza Danych z R
 Version: 3.0-1
-Date: 2019-11-14
 Authors@R: c(person("Michal", "Bojanowski", role=c("aut", "cre"), email="michal2992@gmail.com"))
 Description: Dane do kursu "Analiza danych z R".
 Depends: R (>= 3.3.2)
