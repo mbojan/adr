@@ -25,32 +25,3 @@ pgss <- haven::read_sav(
 )
 
 usethis::use_data(pgss)
-
-
-
-# Variable summary --------------------------------------------------------
-
-# What measured when in PGSS
-
-pgss.info <- pgss %>%
-  mutate(across(- one_of("recordid", "pgssyear"), ~ !is.na(.))) %>%
-  tidyr::pivot_longer(
-    - one_of("recordid", "pgssyear"),
-    names_to = "variable",
-    values_to = "isna"
-  ) %>%
-  group_by(variable, pgssyear) %>%
-  summarise( nna = sum(isna), .groups = "drop" ) %>%
-  tidyr::pivot_wider(names_from = pgssyear, values_from = nna) %>%
-  left_join(
-    labelled::var_label(pgss) %>%
-      unlist() %>%
-      tibble::enframe(name = "variable", value = "label"),
-    by = "variable"
-  )
-
-# CSV version (used in the vignette) to `exdata `
-readr::write_csv(
-  pgss.info,
-  file = here::here("inst", "exdata", "pgss-info.csv")
-)

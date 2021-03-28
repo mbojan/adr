@@ -1,18 +1,21 @@
 ---
 title: "Zmienne PGSS"
-author: "Michał Bojanowski"
-date: "`r Sys.Date()`"
 output: 
   rmarkdown::html_vignette:
     toc: yes
 vignette: >
-  %\VignetteIndexEntry{pgssinfo}
-  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{Zmienne PGSS}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
 ---
 
 
 ```{r setup, include=FALSE, cache=FALSE}
+library(dplyr)
+requireNamespace("labelled")
+data(pgss, package="adr")
 knitr::opts_chunk$set(
   cache=FALSE,
   echo=FALSE
@@ -25,11 +28,22 @@ Krótki opis zmiennych PGSS w ramce `pgss`.
 Dane pochodzą z Archiwum Danych Społecznych http://ads.org.pl.
 
 ```{r read-data, include=FALSE}
-opisy <- read.csv(
-  system.file(file.path("exdata", "pgss-info.csv"), package="adr"),
-  as.is=TRUE,
-  check.names=FALSE
-)
+opisy <- pgss %>%
+  mutate(across(- one_of("recordid", "pgssyear"), ~ !is.na(.))) %>%
+  tidyr::pivot_longer(
+    - one_of("recordid", "pgssyear"),
+    names_to = "variable",
+    values_to = "isna"
+  ) %>%
+  group_by(variable, pgssyear) %>%
+  summarise( nna = sum(isna), .groups = "drop" ) %>%
+  tidyr::pivot_wider(names_from = pgssyear, values_from = nna) %>%
+  left_join(
+    labelled::var_label(pgss) %>%
+      unlist() %>%
+      tibble::enframe(name = "variable", value = "label"),
+    by = "variable"
+  )
 ```
 
 
@@ -59,4 +73,3 @@ knitr::kable(
   )
 )
 ```
-
