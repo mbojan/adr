@@ -19,6 +19,6 @@ Archiwum Danych Społecznych http://www.ads.org.pl
 Podzbiór Polskich Generalnych Sondaży Społecznych
 }
 \examples{
-# ĹšcieĹĽka do pliku XLS
+# Ścieżka do pliku XLS
 system.file(file.path("exdata", "pgss-info.xls"), package="adr")
 }
