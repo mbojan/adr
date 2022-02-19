@@ -1,5 +1,22 @@
-library(XLConnect)
-library(tidyverse)
+requireNamespace("readxl")
+requireNamespace("mbtools")
+requireNamespace("usethis")
+requireNamespace("tidyr")
+library(dplyr)
+
+readxl::read_xlsx("zestawienie-grantobiorcy-2013-2015.xlsx") %>%
+  select(-matches("2013-2015")) %>%
+  setNames(gsub("\\r|\\n|\\.", "", names(.))) |>
+  mutate(
+    grupa = mbtools::carryover(ifelse(is.na(`Nazwa jednostki głównej`), GWO, NA)),
+    pracownicy_naukowi_2015 = as.numeric(recode(`Pracownicy naukowi (wg danych dla 2015 r)`,
+                                     "BRAK DANYCH" = as.character(NA)))
+  ) |>
+  filter(!is.na(`Nazwa jednostki głównej`)) |>
+  tidyr::pivot_longer(
+    c(starts_with("Wnioski"), starts_with("Pozyskane"), starts_with("Przyznana"))
+  )
+
 
 ncn <-
 loadWorkbook("zestawienie-grantobiorcy-2013-2015.xlsx") %>%
